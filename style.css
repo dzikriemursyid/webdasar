@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Fonts
+----------------------------------------------------*/
+.font-xs {
+    font-size: 1rem !important;
+}
+
+.font-x1 {
+    font-size: 1.5rem !important;
+}
+
+.font-x2 {
+    font-size: 2.5rem !important;
+}
+
+.font-x3 {
+    font-size: 5rem !important;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: normal;
+}
+
+/* No Margin No Padding */
+.nospace {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+
+/* Margin
+------------------------------------------------------------*/
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.my-4 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.mx-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.mx-3 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.mx-4 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* Padding
+---------------------------------------------------------*/
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+/* HTML Tags
+---------------------------------------------------------------*/
+article,
+figure,
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+html,
+body {
+    color: #FFF;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    font-family: 'Marriweather Sans', sans-serif;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Transition Fade. This gives a smooth transition effect to all emenets used in this file. */
+*,
+*::before,
+*::after,
+*:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* Flex Properties
+---------------------------------------------------------------*/
+.d-flex-c {
+    display: flex !important;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.d-flex-r {
+    display: flex !important;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+/* Generalise
+---------------------------------------------------------------*/
+
+.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.container {
+    padding: 6rem;
+}
+
+/* Backgound Colours */
+.bg-grey {
+    background-color: #EEE;
+}
+
+.bg-green {
+    background-color: #2E8B57;
+}
+
+/*Seagreen color*/
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    text-transform: uppercase;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn,
+.btn.inverse: :hover {
+    color: #FFF;
+    background-color: #2E8B57;
+    border-color: #2E8B57;
+}
+
+.btn:hover,
+.btn.inverse {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: inherit;
+}
+
+/* Clear */
+.clear {
+    display: block;
+}
+
+.clear::before,
+.clear::after {
+    display: table;
+    content: "";
+}
+
+/* Text */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-white {
+    color: #FFF !important;
+}
+
+.text-dark {
+    color: #333 !important;
+}
+
+/* Float */
+.fl_right {
+    float: right;
+}
+
+.fl_left {
+    float: left;
+}
+
+/* Parallax Scrolling Effects  */
+#parallax-1 {
+    background: url(img/bg-1.1.jpg) fixed no-repeat;
+    min-height: 720px;
+    background-position: center;
+}
+
+#parallax-1 .overlay {
+    min-height: 720px;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Logo */
+#logo {
+    width: 200px;
+    margin-top: 0;
+}
+
+/* Banner Text   */
+#banner-text {
+    position: relative;
+    top: 150px;
+    margin-left: 100px;
+    border-left: 3px solid white;
+    padding-left: 50px;
+}
+
+#banner-text p,
+#banner-text h1 {
+    background-color: transparent;
+    max-width: max-content;
+}
+
+/* Grid */
+.one_half {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    width: 48%;
+}
+
+#extra-text article {
+    margin-left: 10px;
+}
+
+/* Parallax Pink Beach */
+#parallax-pinkbeach {
+    background: url(img/parallaxpinkbeach2.jpg) fixed no-repeat;
+}
+
+/* Parallax Ora Beach */
+#parallax-orabeach {
+    background: url(img/parallaxorabeach.jpg) fixed no-repeat;
+}
+
+/* Parallax Teluk Kiluan Beach */
+#parallax-telukkiluanbeach {
+    background: url(img/parallaxtelukkiluanbeach.jpg) fixed no-repeat;
+}
+
+/* Parallax Karang Ranjang Beach */
+#parallax-karangranjangbeach {
+    background: url(img/parallaxkarangranjangbeach.jpg) fixed no-repeat;
+}
+
+/* Destinations */
+#destinations ul li {
+    max-width: 300px;
+}
+
+/* Image Hover */
+.hover1 {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hover1 .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+.hover1 img {
+    display: block;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+.hover1 h2 {
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-100px);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    padding: 10px;
+}
+
+.hover1 a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FFF;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    opacity: 0;
+    transition: all 0.4s ease;
+    margin: 50px 0 0;
+    padding: 7px 14px;
+}
+
+.hover1 a.info:hover {
+    box-shadow: 0 0 5px #FFF;
+}
+
+.hover1:hover img {
+    transform: scale(1.2);
+}
+
+.hover1:hover .overlay {
+    opacity: 1;
+}
+
+.hover1:hover h2,
+.hover1:hover a.info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hover1:hover a.info {
+    transition-delay: 0.2s;
+}
+
+/* Image Hover Effect 2  */
+.hover2 figure img {
+    transform: rotate(15deg) scale(1.4);
+    transition: 0.3s ease-in-out;
+}
+
+.hover2 figure:hover img {
+    transform: rotate(0) scale(1);
+}
+
+figure {
+    background: #FFF;
+    overflow: hidden;
+}
+
+
+/* Main Footer */
+#main-footer {
+    padding: 20px;
+    color: white;
+    background: #53a7e3;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: linear-gradient(to bottom right, rgb(120, 218, 248) 0%, rgb(79, 29, 219) 100%);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Backtotop Button */
+#backtotop {
+    color: #FFF;
+    background-color: #57ADC4;
+    z-index: 999;
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 1rem;
+    text-align: center;
+    opacity: 0.3;
+}
+
+#backtotop i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: inherit;
+}
+
+#backtotop:hover {
+    opacity: 1;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+
+    #logo {
+        width: 150px;
+    }
+
+    #header #logo {
+        margin: 0;
+    }
+
+    .font-xs {
+        font-size: 0.8rem !important;
+    }
+
+    .font-x1 {
+        font-size: 1.1rem !important;
+    }
+
+    .font-x2 {
+        font-size: 1.8rem !important;
+    }
+
+    .font-x3 {
+        font-size: 3.2rem !important;
+    }
+
+    .container {
+        padding: 4rem !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        padding: 3rem !important;
+    }
+
+    /* Changing flex properties to keep items in different row */
+    #destinations .d-flex-r,
+    #other-issues .d-flex-r {
+        flex-direction: column !important;
+        max-width: max-content;
+        align-self: center;
+    }
+
+    .one_half {
+        width: 85vw !important;
+    }
+
+    #main-footer {
+        display: none;
+    }
+
+    .font-xs {
+        font-size: 0.7rem !important;
+    }
+
+    .font-x1 {
+        font-size: 0.9rem !important;
+    }
+
+    .font-x2 {
+        font-size: 1.5rem !important;
+    }
+
+    .font-x3 {
+        font-size: 3rem !important;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        padding: 2rem !important;
+    }
+
+    .font-x2 {
+        font-size: 1.6rem;
+    }
+
+    #main-footer {
+        display: none;
+    }
+}
